@@ -116,13 +116,21 @@ contactA[0].style.width = '200px';
 // Footer
 document.querySelector("footer p").textContent = siteContent["footer"]["copyright"];
 
-
+``
 
 
 // Stretch
 
-let sampleButton = document.querySelector('button');
+let sampleButton = document.querySelector('button', event);
 sampleButton.addEventListener('click', (event) => {
+   event.target.style.backgroundColor = 'blue';
    alert('You Clicked the Button!')
 })
+
+// More strech added hover over to the top conatiner
+
+let topHover= document.querySelector('.top-content', event);
+topHover.addEventListener('mouseenter' , (event)=> {
+   event.target.style.backgroundColor = 'pink';
+});
 
