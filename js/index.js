@@ -116,3 +116,13 @@ contactA[0].style.width = '200px';
 // Footer
 document.querySelector("footer p").textContent = siteContent["footer"]["copyright"];
 
+
+
+
+// Stretch
+
+let sampleButton = document.querySelector('button');
+sampleButton.addEventListener('click', (event) => {
+   alert('You Clicked the Button!')
+})
+
