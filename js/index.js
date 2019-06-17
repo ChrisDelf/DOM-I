@@ -38,5 +38,53 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+const logo = document.getElementById("logo-img")
+logo.setAttribute('src' , 'img/logo.png')
+
+
+//updating the Navbar
+const links = Array.from(document.querySelectorAll('header nav a'))
+links[0].textContent = ('Services')
+links[1].textContent = 'Products'
+links[2].textContent = 'Visions'
+links[3].textContent = 'Features'
+links[4].textContent = 'About'
+links[5].textContent = 'Contact'
+
+// the circle Image
+let circle = document.getElementById('cta-img');
+circle.setAttribute('src' , 'img/header-img.png');
+
+
+//header above the button
+const domIsA = document.querySelector('.cta-text h1')
+domIsA.textContent = 'DOM IS AWESOME'
+
+// button
+var buttonText = document.querySelector('button');
+buttonText.textContent = ('Get Started');
+
+
+//Main Content Headers
+const contentHeaderA = Array.from(document.querySelectorAll('.text-content h4'))
+contentHeaderA[0].textContent = 'Features'
+contentHeaderA[1].textContent = 'About'
+contentHeaderA[2].textContent = 'Services'
+contentHeaderA[3].textContent = 'Product'
+contentHeaderA[4].textContent =  'Vision'
+
+const contentParaA = Array.from(document.querySelectorAll('.text-content p'))
+contentParaA[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet me"
+contentParaA[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus"
+
+contentParaA[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet m"
+
+contentParaA[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet met"
+
+contentParaA[4].textContent ="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet met"
+
+// middle image
+var codeImg = document.getElementById('middle-img');
+codeImg.setAttribute('src' , 'img/mid-page-accent.jpg');
+
+//
