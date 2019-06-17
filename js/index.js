@@ -43,6 +43,7 @@ logo.setAttribute('src' , 'img/logo.png')
 
 
 //updating the Navbar
+
 const links = Array.from(document.querySelectorAll('header nav a'))
 links[0].textContent = ('Services')
 links[1].textContent = 'Products'
@@ -50,6 +51,24 @@ links[2].textContent = 'Visions'
 links[3].textContent = 'Features'
 links[4].textContent = 'About'
 links[5].textContent = 'Contact'
+
+
+//creating new elements for the nav bar
+let aNew = document.createElement("a");
+aNew.textContent = "Gift Shop";
+
+let navBar = document.querySelector("nav");
+navBar.appendChild(aNew);
+
+let aNew2 = document.createElement("a");
+aNew2.textContent = "Events Calendar";
+
+navBar.prepend(aNew2);
+
+
+
+document.querySelectorAll('header nav a').forEach(a => a.style.color = 'red');
+
 
 // the circle Image
 let circle = document.getElementById('cta-img');
@@ -87,4 +106,13 @@ contentParaA[4].textContent ="Vision content elementum magna eros, ac posuere el
 var codeImg = document.getElementById('middle-img');
 codeImg.setAttribute('src' , 'img/mid-page-accent.jpg');
 
-//
+// Contacts
+document.querySelector(".contact h4").textContent = siteContent["contact"]["contact-h4"];
+const contactA = Array.from(document.querySelectorAll('.contact p'))
+contactA[0].textContent = siteContent["contact"]['address']
+contactA[1].textContent = siteContent["contact"]['phone']
+contactA[2].textContent = siteContent["contact"]['email']
+contactA[0].style.width = '200px';
+// Footer
+document.querySelector("footer p").textContent = siteContent["footer"]["copyright"];
+
